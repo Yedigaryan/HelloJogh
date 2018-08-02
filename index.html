@@ -1,0 +1,946 @@
+
+<html>
+<head>
+<title>COM/EXE/DLL-распаковщики, анализаторы</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="Classification" content="internet,computer,software,compression,сжатие,архиваторы">
+<meta name="Description" content="Всё про Архиваторы и Паковщики, архиваторные утилиты, оболочки и взломщики архивных паролей. Результаты тестирования. Линки и описания.">
+<meta name="KeyWords"content="archive,архиваторы,упаковщики,пакеры,сжатие,компрессия,кракеры,ломалки,
+	benchmark,test,compress,archiver,data,compression,pack,zip,gzip,tar,arc,arj,rar,lzh,lha,uc2,rkive,pklite,upx,pkzip,winzip,DN,
+	NDN,necromancer,DOS Navigator,crack">
+
+<link rel="stylesheet" href="/arctest/css/menu_2.css" type="text/css">
+</head>
+<body>
+<!----------------------    MENU BEGIN    ---------------------->
+<TABLE border=0 width="100%" height="100%"  cellspacing=2 cellpadding=15>
+<TR valign="top">
+<TD width=230 bgcolor=#800000>
+
+<br>
+<a class="Aparent" href="/">Сайт о сжатии</a>
+<span class="parent">&nbsp;&gt;&gt;&nbsp;</span>
+<a class="Aparent" HREF="/arctest/index.htm">ARCTEST</a>
+<br><br>
+
+<a class="Aparent" href="/arctest/menu/cmptests.htm">Сравнительные&nbsp;тесты</a>
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-text.htm" class="Achild" title="Текстовые файлы">Текстовые файлы</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-text-m.htm" class="Achild" title="Текстовые файлы">Текстовые файлы (Mac)</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-exe.htm" class="Achild" title=EXE-файлы>EXE-файлы</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-exe-m.htm" class="Achild" title=EXE-файлы>EXE-файлы (Mac)</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-exep.htm" class="Achild" title="Исполнимые EXE-сжатые файлы">Исполнимые EXE-сжатые</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-wav.htm" class="Achild" title="Аудио: Wav-файлы">Аудио: Wav-файлы</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-wav-m.htm" class="Achild" title="Аудио: Wav-файлы">Аудио: Wav-файлы (Mac)</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-tif.htm" class="Achild" title="Графика: TIFF-файлы">Графика: TIFF-файлы</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-tif-m.htm" class="Achild" title="Графика: TIFF-файлы">Графика: TIFF-файлы (Mac)</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-calg.htm" class="Achild" title="Разноформатные файлы">Разноформатные файлы</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-calg-m.htm" class="Achild" title="Разноформатные файлы">Разноформатные файлы (Mac)</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-game.htm" class="Achild" title="Файлы демо-игры">Файлы демо-игры</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/act/act-game-m.htm" class="Achild" title="Файлы демо-игры">Файлы демо-игры (Mac)</a>
+		<br>
+	</td></tr>
+	</table>
+
+
+<a class="Aparent" href="/arctest/menu/alttests.htm">Альтернативные&nbsp;тесты</a>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/cctg/r-rus.htm" class="Achild" title="Русский текст">Русский текст</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/cctg/r-txt.htm" class="Achild" title="Английский текст">Английский текст</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/cctg/r-src.htm" class="Achild" title=Исходники>Исходники</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/cctg/r-doc.htm" class="Achild" title=WinWord-файл>WinWord-файл</a>
+		<br>&nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/cctg/r-xls.htm" class="Achild" title="Excel-файл">Excel-файл</a>
+		<br>&nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/cctg/r-exe.htm" class="Achild" title="EXE-файл">EXE-файл</a>
+		<br>&nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="http://www.compression.ru/ybs/index-ru.htm" class="Achild" title="Новые версии тестов">Новые тесты</a>
+	</td></tr>
+	</table>
+	
+<span class="parent">Графические&nbsp;тесты</span>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/art/artest.htm" class="Achild" title="Сжатие изображений без потерь">Сжатие изображений без потерь</a>
+	</td></tr>
+	</table>
+
+<span class="parent">Новости</span>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/newsprv.htm" class="Achild" title="Архив новостей">Архив&nbsp;новостей</a>
+	</td></tr>
+	</table>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/archive/comp_soft_others_arctest.html" class="Achild" title="Архив рассылки">Архив&nbsp;рассылки</a>
+	</td></tr>
+	</table>
+
+<a class="Aparent" href="/arctest/menu/utilites.htm">Утилиты</a>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-view.htm" class="Achild" title="Просмотра-распаковки">Просмотра-распаковки</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-id.htm" class="Achild" title="Идентификации-распаковки">Идентификации-распаковки</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-tr.htm" class="Achild" title="COM/EXE-распаковки, анализа">COM/EXE-распаковки, анализа</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-inst.htm" class="Achild" title="Распаковки инсталляций">Распаковки инсталляций</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-sfx.htm" class="Achild" title="Создания SFX-архивов/инсталляций">Создания SFX-архивов/инсталляций</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-cvt.htm" class="Achild" title="Конвертирования">Конвертирования</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-fix.htm" class="Achild" title="Починки архивов">Починки архивов</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-search.htm" class="Achild" title="Поиска">Поиска</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-shell.htm" class="Achild" title="Универсальные оболочки">Универсальные оболочки</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-bann.htm" class="Achild" title="Управления баннерами">Управления баннерами</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-add.htm" class="Achild" title="Управления файлами">Управления файлами</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-bak.htm" class="Achild" title="Резервного копирования">Резервного копирования</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-test.htm" class="Achild" title="Тестирования">Тестирования</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-misc.htm" class="Achild" title="Разные">Разные</a>
+	</td></tr>
+	</table>
+
+<a class="Aparent" href="/arctest/menu/fmanagers.htm">Файл-менеджеры</a>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/managers/managers.htm" class="Achild" title="Файл-менеджеры">Файл-менеджеры</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-far.htm" class="Achild" title="Арх.-модули для FAR">Арх.-модули для FAR</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/utils/utils-wc.htm" class="Achild" title="Арх.-модули для Windows Commander">Арх.-модули для Win. Commander</a>
+	</td></tr>
+	</table>
+
+<a class="Aparent" href="/arctest/menu/descriptions.htm">Описания</a>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/artic.htm" class="Achild" title="Статьи, интервью">Статьи, интервью</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/artic-algo.htm" class="Achild" title="Теория, алгоритмы">Теория, алгоритмы</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/artic-self.htm" class="Achild" title="Self-описания архиваторов">Self-описания архиваторов</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/artic-faq.htm" class="Achild" title="FAQ - ответы на часто задаваемые вопросы">FAQ</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/artic-misc.htm" class="Achild" title="Разное">Разное</a>
+	</td></tr>
+	</table>
+
+<a class="Aparent" href="/arctest/menu/links.htm">Линки</a>
+	
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/links.htm" class="Achild" title="Архиваторные">Архиваторные</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/links-exe.htm" class="Achild" title="COM/EXE/DLL-пакеров">COM/EXE/DLL-пакеров</a>
+	</td></tr>
+	</table>
+
+<a class="Aparent" href="/arctest/menu/necro_dn.htm">Necromancer's&nbsp;DN</a>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/ndn/ndn.htm" class="Achild" title="О программе">О программе</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/ndn/news.htm" class="Achild" title="Новости свежих версий">Новости свежих версий</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/ndn/newsprv.htm" class="Achild" title="Архив новостей">Архив новостей</a>
+	</td></tr>
+	</table>
+
+<a class="Aparent" href="/arctest/menu/support.htm">Поддержка</a>
+
+	<table border=0 cellspacing=0 cellpadding=0>
+	<tr><td width="100%" nowrap> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<!--a href="lfnb" class="Achild"><b>arctest@compression.ru</b></a-->
+		<img src="/arctest/ssi/e_mail_menu.gif">
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/dl.htm" class="Achild" title="Подписка на pассылкy новостей">Подписка на рассылку новостей</a>
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/vote.htm" class="Achild" title="Архиваторные опросы">Архиваторные опросы</a>
+<!--
+ <br> &nbsp;&nbsp;&nbsp;<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18><a href="/arctest/code.htm" class="Achild" title="Обмен и коды кнопок">Обмен и коды кнопок</a><br>
+-->
+		<br> &nbsp;&nbsp;&nbsp;
+		<img src="/arctest/images/bullet.gif " border=0 align="absmiddle" width=18 height=18>
+		<a href="/arctest/contact.htm" class="Achild" title="Об авторе">Об авторе</a>
+	</td></tr>
+	</table>
+
+
+</TD>
+<TD>
+<!----------------------    YOU PAGE HERE    ---------------------->
+<!------------------------------------------------------------ HEADER BEGIN -------------------->
+<style>
+<!--
+
+-->
+</style>
+<center>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0> 
+<TR VALIGN=TOP>
+    <TD ROWSPAN=2><IMG SRC="/arctest/images/maket021_02.gif" WIDTH=43 HEIGHT=125></TD>
+    <TD><A class="Aheader" HREF="http://www.compression.ru/arctest"><IMG SRC="/arctest/images/maket021_03.gif" WIDTH=500 HEIGHT=40 BORDER=0  ALT="Все о сжатии / arctest. Авторский проект."></a></TD>
+        <TD ROWSPAN=2><IMG SRC="/arctest/images/maket021_04.gif" USEMAP="#map1"  WIDTH=136 HEIGHT=125 BORDER=0></TD>
+	<map name="map1">
+		<area shape="rect" coords="90,5,125,37" href="/forum/" title="Форум">
+		<area shape="rect" coords="0,0,136,114" href="http://www.compression.ru/">
+	</map>
+    </TR>
+    <TR VALIGN=TOP>
+	<TD WIDTH=453 HEIGHT=85 BGCOLOR="#800000" VALIGN=TOP>
+	<div style="color:#F0F0F0;">
+<!--****************	 HEAD MENU BEGIN  *************************-->
+<font  style="font-size: 9pt;">
+	<A class="head_menu_links_style" href="/">Сайт о сжатии</A> &gt;&gt; 
+	<A class="head_menu_links_style" href="/all_anns.htm">Новинки</A> | 
+	<A class="head_menu_links_style" href="/about/">О сервере</A> 
+       (<A class="head_menu_links_style" href="http://www.compression-links.info/" target="_blank"><font color=red>Compression Catalog!</font></A> |  
+        <A class="head_menu_links_style" href="/index_en.htm"><font color=red>ENGLISH</font></A>)
+	<br>
+	
+	<A class="head_menu_links_style" href="/book/">Книга "Методы сжатия данных"</A> &gt;&gt; 
+	<A class="head_menu_links_style" href="/book/part1/">Без потерь</A> | 
+	<A class="head_menu_links_style" href="/book/part2/">Изображений</A> | 
+        <A class="head_menu_links_style" href="/book/part3/">Видео</A><br>
+	
+	Разделы &gt;&gt;
+		<A class="head_menu_links_style" href="/download/">Cтатьи</A> | 
+		<A class="head_menu_links_style" href="/video/index_ru.htm">Видео</A> |     
+		<A class="head_menu_links_style" href="/arctest/">Arctest</A> | 
+		<A class="head_menu_links_style" href="http://www.compression-links.info/" target="_blank">Ссылки</A> | 
+		<A class="head_menu_links_style" href="/fido/">Ru.compress</A> | 
+		<A class="head_menu_links_style" href="http://forum.compression.ru/">Форум</A><br>
+    
+</font>
+
+
+<font  style="font-size: 8pt;">
+	
+	Проекты &gt;&gt;
+		<A class="head_menu_links_style" href="/dv/">Д.Ватолина</A> | 
+		<A class="head_menu_links_style" href="/artest/">А.Ратушняка</A>
+ | 
+		<A class="head_menu_links_style" href="/ms/">М.Смирнова</A> | 
+		<A class="head_menu_links_style" href="/ybs/index-ru.htm">В.Юкина</A>
+ | 
+		<A class="head_menu_links_style" href="/sh/">Е.Шелвина</A> | 
+		<A class="head_menu_links_style" href="/ds/">Д.Шкарина</A> 
+
+</font>
+
+<!--****************	 HEAD MENU END  *************************-->
+
+	</div>
+	</TD>
+</TR>
+<TR>
+    <TD COLSPAN=3><IMG SRC="/arctest/images/maket021_07.gif" WIDTH=679 HEIGHT=4
+        ALT="---------------------------------------------------------"></TD>
+</TR>
+</TABLE></center>
+<!------------------------------------------------------------ HEADER END -------------------->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLMKK23"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42270449 = new Ya.Metrika({
+                    id:42270449,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://d31j93rd8oukbv.cloudfront.net/metrika/watch_ua.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/42270449" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<h3 align="center">COM/EXE/DLL-распаковщики, анализаторы</h3>
+
+<h4 align="left"><a name="cup386"></a>CUP386 3.4</h4>
+
+<p>Известный хакерский распаковщик DOS
+COM/EXE-упакованных или защищенных файлов by Sage/CyberWare
+(UCF). Позволяет распаковывать программы
+сжатые/зашифрованные даже неизвестными или
+новыми утилитами. Работает через
+командную строку и имеет множество параметров
+(читай возможностей). В программе имеется
+несколько режимов взлома: пошаговый real-mode,
+пошаговый V86 и real-mode i80386-эмуляция. В зависимости
+от режима, CUP386 использует различные методы
+отладки, обходит антидебаговый код и т.п. Кстати в
+программе есть и встроенный визуальный дебаггер
+наподобие Turbo Debugger для &quot;ручного&quot; взлома.
+Лично мне оригинальной показалась опция &quot;Я все
+еще жив&quot;, которая заставляет перемигиваться
+LED-индикаторы на клавиатуре во время распаковки,
+показывая, что программа пока не зависла.</p>
+
+<h5>Программу можно скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/ucfcup34.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/ucfcup34.zip</a>
+(60 Кб)</h5>
+
+<hr>
+
+<h4><a name="deshrink"></a>DeShrink 1.6</h4>
+<p>Самая продвинутая
+Windows-утилита, предназначенная для &quot;распаковки&quot;
+EXE/DLL файлов, сжатых популярным EXE-пакером <a href="../self/shrinker.htm">Shrinker</a>
+(вплоть до версии 3.4). DeShrink имеет графический
+интерфейс, позволяющий легко указать путь и
+имена входного/выходного файлов,
+просмотреть EXE-заголовок и даже снять
+шифрование с отдельных секций методом
+простого перебора.</p>
+<h5>Программу можно скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/dshrnk16.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/dshrnk16.zip</a>
+(190 Кб)</h5>
+
+<hr>
+
+<h4 align="left"> <a name="exes"></a>ExeScan 3.21</h4>
+
+<p>&nbsp;&nbsp; Эта DOS-утилита by STILLSON
+предназначена для определения паковщиков и
+навесных защит (довольно много),
+которыми были защищены EXE или COM файлы. Кроме того
+ExeScan позволяет распознавать наиболее
+распространенные компиляторы.
+<p>Программа (вернее два ее модуля) может
+работать в нескольких режимах: в простом
+(&quot;тупое&quot; определение), в deepscan (пытается обнаружить многослойную защиту/сжатие,
+например когда EXE'шник сжат <a href="../self/pklite.htm">PKLite</a>-ом и защищен
+программой CrackStop) и в режиме generic detection (перехват Int
+21h, выполнение исследуемого файла и попытка
+определить код).
+<p>ExeScan также позволяет
+просматривать и сравнивать информацию
+заголовков двух разных исполнимых файлов, имеет
+встроенный дизассемблер (есть функции показа
+входных точек и т.п.), может работать
+совместно с универсальным анпакером <a href="#teu">TEU</a>.</p>
+
+<h5>Программу можно
+скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/es321.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/es321.zip</a>
+(70 Кб)</h5>
+
+<hr>
+
+<h4><a name="fa"></a>File Analyzer 1.6.x</h4>
+<p>File Analyzer - эта программа способная определить чем скомпилирован файл,     чем упакован, закодирован,
+иммунизирован и т.д. File Analyzer также умеет показывать     внутренности архивов и SFX архивов
+(<a href="../self/rar-dos.htm">RAR</a>, <a href="../self/arj.htm">ARJ</a>,
+ZIP, LZH, <a href="../self/lha.htm"> LHA</a>, ICE, <a href="../self/zoo.htm">ZOO</a>,
+SWG, DWC, <a href="../self/sqz.htm">SQZ</a>, HYP, <a href="../self/ace.htm">ACE</a>,
+CAB, PAC, <a href="../self/ha.htm">HA</a>, Stirling), выдавать информацию о разных графических
+файлах (<a href="../descript/lzw-gif.htm">GIF</a>/<a href="../descript/jpeg-basis.htm">JPG</a>/PCX/BMP/ICO/IFF) - разрешение, количество цветов и т.д. Понимает
+следующие EXE форматы:
+MZ/NE/LE/LX/LE/W3/P2/P3/DL/MP.<br>
+&nbsp;&nbsp; File Analyzer способен показывать данные     таблиц объектов NE/LE/LX/PE.
+Имеется поддержка внешних
+плагинов, встроенный     компилятор
+своей базы данных, созданный для увеличения производительности. В
+БД можно использовать макро-команды типа "J1J1" -     это означает ассемблерную команду JMP/JMPS/CALL etc, т.е. есть возможность     анализа
+файлов с различными переходами...
+<p>Программа занимает немного места
+на диске и поставляется с хорошей
+документацией на русском и английском
+языках.</p>
+
+<h5>Программу можно скачать с сайта <a href="http://www.world.lv/vnet" target="_blank">http://www.world.lv/vnet</a>
+(135 Кб)</h5>
+
+<hr>
+
+<h4 align="left"><a name="fi"></a>FileInfo 2.49 </h4>
+
+<p>Свежая утилита от M.Hering,
+предназначенная для определения паковщиков
+и защит (в том числе самых новых),
+которыми были &quot;обработаны&quot; исполнимые файлы. Кроме того
+FileInfo позволяет распознавать &quot;работу&quot; наиболее
+распространенных компиляторов и форматы&nbsp;SFX-EXE-архивов.
+<p>Программа может
+работать в режиме показа краткой
+информации о файлах в директории(ях) или в
+режиме показа детальной информации о
+конкретном файле. Имеются встроенный HEX/TXT
+вьюер (с возможностью быстрого перехода по
+адресам, поиска, фильтрации), редактор MZ/PE заголовков
+и контрольных сумм, оригинальный
+графический байт-анализатор.
+<p>Поддерживает длинные имена
+файлов под Win9x.</p>
+
+<p>В последней версии
+добавлена и улучшена поддержка определения
+двух десятков форматов защит/пакеров,
+в том числе <a href="../self/upx.htm">UPX</a>, <a href="../self/telock.htm">tELock</a>,
+уменьшено потребление памяти, внесены
+прочие улучшения...</p>
+
+<h5>Программу можно
+скачать с сайта <a href="http://www.programmerstools.org/files/utilities/fi.zip">http://www.programmerstools.org/files/utilities/fi.zip</a>
+(155 Кб)</h5>
+
+<hr>
+
+<h4><a name="ned"></a>NED 2.31 (New Executable files Deshrinker)</h4>
+<p>Утилита командной строки by Snajder,
+позволяющая распаковывать исполнимые NE-файлы
+(NE-Visual Basic 3.0), сжатые утилитой <a href="../self/shrinker.htm">Shrinker</a>
+версий 3.xx.</p>
+
+<h5>Программу можно
+скачать с сайта <a href="http://www.programmerstools.com/files/unpackers/ned.zip">http://www.programmerstools.com/files/unpackers/ned.zip</a>
+(8 Кб)</h5>
+
+<hr>
+
+<h4 align="left"> <a name="petite-enl"></a>Petite 2.x Enlarger 1.3</h4>
+
+<p>Простенькая Windows-утилита by r!sc, позволяющая распаковывать EXE/DLL файлы,
+сжатые пакером <a href="../self/petite.htm">Petite</a>
+версий 2.1/2.2.</p>
+
+<p>В новой версии переписан
+обработчик командной строки (иногда не
+открывались файлы под NT).</p>
+
+<hr>
+
+<h4><a name="peuncomp"><u></u></a><a name="pe-unc"></a>PE-UnCompact 1.5</h4>
+<p>Небольшая Windows-утилита by tNO позволяет распаковывать EXE,
+DLL, SCR и OCX (?) файлы,
+сжатые популярным пакером <a href="../self/pecompact.htm">PECompact</a>
+версий 1.24-1.30. Расжатие не производится если выбранный файл не
+является PECompact-сжатым. При распаковке
+программа восстанавливает расширение
+файла, таблицы импорта, секции, &quot;выравнивает&quot;
+код.</p>
+<p>В новой версии добавлена
+поддержка <a href="../self/pecompact.htm">PECompact</a> 1.30,
+внесены внутренние изменения.</p>
+<h5>Программу можно скачать с сайта <a href="http://pleiku.vietmedia.com/protools/files/unpackers/tnopeunc.zip">http://pleiku.vietmedia.com/protools/files/unpackers/tnopeunc.zip</a>
+ (15 Кб)</h5>
+<hr>
+<h4 align="left">PMWUnLite 1.30</h4>
+<p>Небольшая утилита,
+предназначенная для распаковки исполнимых
+файлов защищенного режима (типа DOS/4GW),
+сжатых утилитой <a href="../self/pmwlite.htm">PMWLite</a> из
+набора PMODE/W.</p>
+<h5 align="left">Программу можно скачать с сайта <a href="http://www.suddendischarge.com/cgi-bin/antileech.cgi?pmwun130.zip">http://www.suddendischarge.com/cgi-bin/antileech.cgi?pmwun130.zip</a>
+(38 Кб)</h5>
+<hr>
+<h4 align="left"> <a name="teu"></a>TEU
+1.8x (The Executables' Unpacker)</h4>
+<p>Универсальный распаковщик
+запакованных или защищенных исполнимых файлов by
+JVP. TEU распознает программы полученные в
+наиболее распространенных компиляторах и позволяет распаковывать файлы, если
+они были защищены/сжаты неизвестными или новыми
+утилитами. Кроме этих средств в TEU есть
+несколько оригинальных, даже помеченных значком
+TM режимов взлома: DirectY и PassiveX. Однако из-за
+отсутствия документации ничего определенного
+сказать о них не могу.&nbsp;
+<p>Утилита работает из командной строки и
+имеет n-ное количество параметров, которые как
+обычно не обязательно использовать. Хочу также
+отметить, что TEU может работать совместно с
+утилитой <a href="#exes">ExeScan</a>.
+<p>Программа поставляется в двух версиях:
+на английском (буква &quot;e&quot; в конце версии) и
+немецком языках (&quot;d&quot;).</p>
+<h5>Программу можно скачать с сайта <a href="http://members.xoom.com/jvp/">http://members.xoom.com/jvp/</a>
+(40 Кб)</h5>
+<hr>
+<h4 align="left"><a name="tron"></a>TRON 1.30</h4>
+<p>Еще один универсальный распаковщик
+запакованных или защищенных исполнимых файлов by
+Smilesoft Company. Знает около двух десятков программ (от
+<a href="../self/compack.htm">
+ComPack</a> до Protect EXE/COM и <a href="../self/wwpack.htm">WWPack</a>), не считая их множества
+подверсий. Утилита традиционно может
+попытаться распаковывать файлы,
+сжатые/защищенные неизвестными или новыми
+программами. Правда для этого надо сперва
+зарегистрироваться и заплатить за программу 25$... При взломе TRON может
+опционально работать в специальном режиме
+&quot;отклонения&quot; прерываний, а также в
+защищенном режиме.
+<p>Программа занимает мало места на
+диске и очень неплохо документирована; имеется
+много информации по пакерам/протекторам.</p>
+
+<h5>Программу можно скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/tron130.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/tron130.zip</a>
+(40 Кб)</h5>
+
+<hr>
+
+<h4><a name="unaspack"></a>UnASPack 1.0.9.1</h4>
+<p>Эта небольшая Windows-утилита by BiWeiGuo
+позволяет распаковывать EXE и DLL файлы,
+сжатые популярным пакером <a href="../self/aspack.htm">ASPack</a>
+до версии 2.1. Расжатие не будет
+производиться если выбранный файл не
+является ASPack'ованным (или использованная
+для сжатия версия <a href="../self/aspack.htm">ASPack</a>
+неизвестна утилите).
+<p>При распаковке всегда создается
+резервная копия файла.</p>
+<h5>Программу можно скачать с сайта <a href="http://pleiku.vietmedia.com/protoools/files/unpackers/2unaspack.zip">http://pleiku.vietmedia.com/protoools/files/unpackers/2unaspack.zip</a>
+(73 Кб)</h5>
+
+<hr>
+
+<h4 align="left"><a name="unp"></a>UNP 4.12c</h4>
+
+<p>Некогда очень популярный, правда
+немного устаревший (1995 год) универсальный
+распаковщик запакованных или защищенных DOS
+исполнимых файлов by Ben Castricum. Умеет определять и
+снимать множество защит и &quot;упаковок&quot; (знает
+около 50 наименований программ, не считая их
+множества подверсий). Кроме того, UNP может
+пытаться распаковывать файлы, сжатые/защищенные
+неизвестными или новыми утилитами (правда, эта
+функция не такая мощная, как в других
+специализированных программах, описанных на
+этой странице).
+<p>UNP позволяет конвертировать
+некоторые EXE-файлы в COM и наоборот, вставлять
+файлы в заголовки программ, &quot;выдирать&quot; и
+&quot;прикреплять&quot; оверлеи, производить поиск
+сжатых файлов в директории, оптимизировать
+EXE'шники для последующего сжатия,
+&quot;выравнивать&quot; EXE-заголовки для более
+быстрого запуска, удалять в них же ненужную
+информацию, например комментарии линкеров и т.п.
+<p>Программа хорошо документирована,
+занимает традиционно немного места. Как
+говорится &quot;The must have program&quot;...</p>
+
+<h5>Программу можно
+скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/unp412b.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/unp412b.zip</a>
+(без док)<br>
+Полную версию можно скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/unp411.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/unp411.zip</a>
+(40 Кб)</h5>
+
+<hr>
+
+<h4><a name="un-pack"></a>Un-Pack (File Analizer &amp; Unpacker) 2.2 </h4>
+<p>Новая мощная DOS-утилита by Snow Panther,
+предназначенная для идентификации и при
+возможности снятия в автоматическом режиме
+различных навесных защит и COM/EXE-&quot;запаковок&quot;.
+Программа расшифровывает  большинство  из
+тех файлов,  что  не "берет" <a href="#cup386">  CUP386</a>
+и X-TRACT. Иногда после  некоторых  изменений,
+сделанных рассматриваемой утилитой, распаковка
+может быть произведена с помощью <a href="#cup386">  CUP386</a>,
+о чем Un-Pack вас уведомит.
+<p>Имеются функции установки даты/времени
+файлов, их усечения, анализа PE файлов (импорт./экспортируемые функции),
+дампер (универсальный распаковщик) для COM файлов,
+generic детектор неизвестных типов защит/сжатия,
+EXE->COM конвертор, обработчик relocations,
+дизассемблер entry point'a, эвристический анализатор...
+<p>Программа поддерживает длинные
+имена файлов (LFN), может работать совместно с
+анпакером <a href="#teu">TEU</a>. Она также опознает
+всевозможные &quot;левые&quot; форматы файлов по
+расширениям и использует &quot;движки&quot; утилит <a href="#exes">ExeScan</a>,
+<a href="#fa">File Analyzer</a>, <a href="utils-id.htm#idarc">IDArc</a>, что сделало возможным распознавание
+около 170 типов архивных файлов.</p>
+<p>В новой версии добавлены сигнатуры для
+MZ, NE, PE файлов, доработана конвертация EXE->COM, обновлен движок <a href="utils-id.htm#idarc">IDArc</a>,
+реализована поддержка
+распаковки файлов модифицированных tElock,
+ASProtect, <a href="../self/aspack.htm">ASPack</a>, GFX2EXE, PE-Nightmare и другими;
+исправлено несколько багов...</p>
+<h5>Программу можно скачать с сайта <a href="http://mud.sz.jsinfo.net/per/aaron/files/file-analyzers/unpack22.zip">http://mud.sz.jsinfo.net/per/aaron/files/file-analyzers/unpack22.zip</a>
+(800 Кб)</h5>
+
+<hr>
+
+<h4><a name="unpec"></a>UnPECompact 1.31 </h4>
+<p>Небольшая медленноватая Windows-утилита by
+Yoda, позволяющая распаковывать EXE файлы,
+сжатые популярным пакером <a href="../self/pecompact.htm">PECompact</a>
+практически любых версий (0.9-1.43). Распаковка не производится если выбранный файл не
+является PECompact-сжатым. Имеется возможность
+управления из командной
+строки.
+<p>Утилита обычно не работает
+под Win2K.</p>
+<p>В новой версии добавлена
+поддержка дополнительных версий <a href="../self/pecompact.htm">PECompact</a>,
+появилась опция принудительного полного
+восстановления таблицы импорта.</p>
+<h5>Программу с исходниками можно скачать с сайта
+<a href="http://y0da.cjb.net">http://y0da.cjb.net</a> (70 Кб)</h5><hr>
+
+<h4><a name="unpep"></a>UnPEPack 1.0 </h4>
+<p>Мелкая Windows-утилита by M.o.D., позволяющая распаковывать
+исполнимые файлы,
+сжатые пакером <a href="../self/pepack.htm">PEPack</a>. Не работает
+под Win2K.</p>
+
+<h5>Программу с исходниками можно скачать с сайта
+<a href="http://pleiku.vietmedia.com/protoools/files/unpackers/unpepack.zip">http://pleiku.vietmedia.com/protoools/files/unpackers/unpepack.zip</a>
+(135 Кб)</h5>
+<hr>
+
+<h4>UnShrinker 1.0</h4>
+<p>Данная утилита командной
+строки предназначена для тех людей, которым вдруг понадобилось
+получить файл запакованный <a href="../self/shrinker.htm">Shrinker</a>'ом версий 3.2-3.3 (на более ранних
+версиях не тестировался) в чистом виде.
+<p>Текущая версия способна распаковывать только файлы с заголовками
+PE.</p>
+
+<h5>Программу можно скачать с сайта <a href="http://plieku.vietmedia.com/protools/files/unpackers/shrunp.zip">http://plieku.vietmedia.com/protools/files/unpackers/shrunp.zip</a></h5>
+
+<hr>
+
+<h4 align="left">UNTPack 1.00</h4>
+
+<p>Примитивная утилита для
+распаковки COM-файлов, сжатых упаковщиком <a href="../self/tpack.htm">T-Pack</a> v0.5b.</p>
+
+<h5 align="left">Утилиту можно
+скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/untpack.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/untpack.zip</a>
+(4 Кб)</h5>
+
+<hr>
+
+<h4 align="left"><a name="uup"></a>UUP 1.4 (Universal
+EXE UnPacker)</h4>
+
+<p>Универсальный распаковщик DOS EXE-упакованных
+или защищенных файлов by Unibest. Позволяет
+распаковывать программы сжатые/зашифрованные
+даже неизвестными или новыми утилитами. UUP работает через командную строку и
+имеет несколько параметров, позволяющих
+указывать &quot;глубину&quot; взлома, включать режим
+более &quot;строгого&quot; определения размера
+распакованной программы и повышать свою &quot;болтливость&quot;.</p>
+
+<h5>Программу можно скачать с сайта <a href="ftp://ftp.elf.stuba.sk/pub/pc/pack/uup14.zip">ftp://ftp.elf.stuba.sk/pub/pc/pack/uup14.zip</a></h5>
+
+<hr>
+<h4 align="left"><a name="w32intro"></a>Win32 Intro
+0.7x</h4>
+
+<p>Универсальный распаковщик Win32
+EXE-упакованных
+или защищенных файлов by Vitaly Evseenko.
+Теоретически позволяет
+распаковывать Win32-программы сжатые/зашифрованные
+любыми утилитами. Теоретически потому, что,
+откровенно говоря, большая часть моих
+попыток получить работоспособные
+распакованные EXE-шники с помощью этой
+программы, не увенчалась успехом. Возможно
+в новых версиях дела будут обстоять получше.
+<p>Интерфейс Win32 Intro максимально
+упрощен: окно с двумя полями для указания
+имени распаковываемой программы и ее
+необязательные параметры запуска (возможен
+пуск утилиты и с указанием файла для взлома
+в командной строке).</p>
+
+<h5>Программу можно скачать с сайта <a href="http://madmat.hypermart.net" target="_blank">http://madmat.hypermart.net</a>
+(30 Кб)</h5>
+
+<hr>
+<h4 align="left"><a name="xpklt"></a>xPKLite 0.1</h4>
+
+<p>Специализированный command line распаковщик
+программ, сжатых утилитой <a href="../self/pklite.htm">PKLite
+v2.0x</a>.</p>
+
+<h5>Программу можно скачать с сайта <a href="http://usrwww.mpx.com.au/~entropy/program.html" target="_blank">http://usrwww.mpx.com.au/~entropy/program.html</a></h5>
+
+<hr>
+<h4 align="left"><a name="xwwp"></a>XtractWWPack</h4>
+
+<p>Специализированный command line распаковщик
+программ, сжатых утилитой <a href="../self/wwpack.htm">WWPack</a>.
+Немного странно ведет себя под Windows, так что
+лучше запускайте под чистым DOS.</p>
+
+<h5>Программу можно скачать с сайта <a href="http://usrwww.mpx.com.au/~entropy/program.html" target="_blank">http://usrwww.mpx.com.au/~entropy/program.html</a>
+(5 Кб)</h5>
+
+
+<!------------------------------------------------------------ FOOTER BEGIN -------------------->
+
+
+
+<table BORDER=0 COLS=2 WIDTH="100%" >
+<tr><td align = left>
+</td>
+<td align = right>
+	<span class="footer"><I>Последнее обновление: 
+	
+	10-March-2011   
+	</I></span>
+</td></tr>
+</table>
+    
+<hr size=1 width=100%>
+
+
+<!-- по ARCTEST -->
+<p>
+<a class="arctestAfooter" href="http://www.compression.ru">Сайт о сжатии</a>
+<span class="parent">&nbsp;&gt;&gt;&nbsp;</span>
+<a class="arctestAfooter" HREF="http://www.compression.ru/arctest/index.htm">ARCTEST</a>
+<span class="parent">&nbsp;&gt;&gt;&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/cmptests.htm">Сравнительные&nbsp;тесты</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/alttests.htm">Альтернативные&nbsp;тесты</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/art/artest.htm">Графические&nbsp;тесты</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/news.htm">Новости</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/utilites.htm">Утилиты</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/fmanagers.htm">Файл'менеджеры</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/descriptions.htm">Описания</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/links.htm">Линки</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/necro_dn.htm">Necromancer's&nbsp;DN</a>
+<span class="parent">&nbsp;|&nbsp;</span>
+<a class="arctestAfooter" href="/arctest/menu/support.htm">Поддержка</a>
+
+<br><br>
+
+<!-- end по ARCTEST -->
+
+
+
+
+<table align=right><td align=right>
+<table border=0 cellpadding=10 cellspacing=1>
+<td>
+	<form action="/cgi-bin/search" method=get>
+			 <span class="footer">Поиск:</span>			 
+			 <input type=text name=f size=15 value="">
+			 <input type=submit name=ok value=" Искать ">
+			 <input type=hidden name=t value="Оо">
+			<!-- <input type=hidden name=r value="abs"> -->
+		 </form>
+ </td>
+ </table>
+ <small>
+	 <a class="Afooter" href="/search_help.htm">Справка</a> 
+	 <a class="Afooter" href="/cgi-bin/search?a">Детальный запрос</a><br>
+	<div align="right" class="footer"><I>
+	Размер сервера: 8069 файлов 1215Мб
+
+	</I></div>
+</small>
+</td></table><br>
+
+<font size=-1><b>
+
+<!--****************	 FOOTER MENU BEGIN  *************************-->
+
+<A  href="/">Сайт о сжатии</A> &gt;&gt;
+<BR>
+&nbsp;&nbsp;<A  href="/all_anns.htm">Новинки</A> | 
+<A  href="/about/">О сервере</A> | 
+<A  href="/about/statistics/">Статистика</A>
+<BR><BR>
+&nbsp;&nbsp;<A  href="/book/">Книга "Методы сжатия данных"</A> &gt;&gt;
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp; <A  href="/book/part1/">Универсальные</A> | 
+<A  href="/book/part2/">Изображений</A> | 
+<A  href="/book/part3/">Видео</A>
+<BR><BR>
+&nbsp;&nbsp;Разделы &gt;&gt; 
+<A  href="/download/">Download (статьи+исходники)</A> | 
+<A  href="/links/">Ссылки</A> | 
+<A  href="/fido/">Ru.compress</A> | 
+<A  href="/arctest/">Arctest</A> | 
+<A  href="/video/index_ru.htm">Видео</A> | 
+<A  href="http://www.compression-links.info/" target="_blank">Каталог ссылок</A> | 
+<A  href="http://forum.compression.ru/">Форум</A>
+<BR>
+&nbsp;&nbsp;Проекты &gt;&gt; 
+<A  href="/dv/">Д.Ватолина</A> 
+|
+<A  href="/artest/">А.Ратушняка</A> | 
+<A  href="/ms/">М.Смирнова</A> | 
+<A  href="/ybs/index-ru.htm">В.Юкина</A> | 
+<A  href="/sh/">Е.Шелвина</A> | 
+<A  href="/fa/">А.Филинского</A> | 
+<A  href="/ds/">Д.Шкарина</A> | 
+<A  href="/so/">С.Оснача</A> 
+
+<!--****************	 FOOTER MENU END  *************************-->
+
+ </b></font>
+
+
+<br>
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+        <TR VALIGN=TOP>
+                <TD ROWSPAN=2 WIDTH=578>
+                  <i>
+                  &nbsp;&nbsp;<a class="Afooter" href=/forum/>Оставьте ваши замечания, предложения, мнения!</a><br>
+                  &nbsp;&nbsp;<span class="footer">О найденных ошибках пишите на</span> 
+		  <!--img src="/images/address.gif"-->
+		  <a class="Afooter" href="/about/#contacts">compression_на_graphicon.ru</a><br>
+                  &nbsp;&nbsp;&copy; <a class="Afooter" href=/about/#team>Д.Ватолин, А.Ратушняк, М.Смирнов, В.Юкин и др.</a><span class="footer">, текст, состав., 2001-2003</span><br>
+                  &nbsp;&nbsp;&nbsp; <b><span class="footer">Project supported by</span> <a class="Afooter" href="http://graphics.cs.msu.su/">Graphics & Media Lab</a></b><p>
+                  
+                  &nbsp;&nbsp;&nbsp;<span class="footer"><b>ЭТОТ ДОКУМЕНТ МОЖНО СКАЧАТЬ C</span>
+                  <a class="Afooter" href=http://www.compression.ru/arctest/utils/utils-tr.htm>http://www.compression.ru/arctest/utils/utils-tr.htm</a>
+                  </b>
+                  </i>
+		  <p>
+		  <!--begin of Top100 logo-->
+ 	           <a class="Afooter" href="http://top100.rambler.ru/top100/">
+		   <img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-blue.gif" alt="Rambler's Top100" width=88 height=31 border=0></a>
+	          <!--end of Top100 logo -->
+		  
+		  
+		  <!--Rating@Mail.ru LOGO--><a target=_top
+		  href="http://top.mail.ru/jump?from=440787"><img
+		  src="http://top.list.ru/counter?id=440787;t=57;l=1"
+		  border=0 height=31 width=88
+		  alt="Рейтинг@Mail.ru"></a><!--/LOGO-->
+		  
+		  
+                </TD>
+        </TR>
+        <TR>
+                <TD><IMG SRC="/images/spacer.gif" WIDTH=26 HEIGHT=1></TD>
+                <TD><IMG SRC="/images/spacer.gif" WIDTH=26 HEIGHT=1></TD>
+        </TR>
+</TABLE>
+</center>
+<!------------------------------------------------------------ FOOTER END -------------------->
+
+</TD>
+</TR>
+</TABLE>
+</body>
+</html>
