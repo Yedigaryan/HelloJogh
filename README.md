@@ -1,2 +1,2 @@
 # HelloJogh
-Repository fo everything
+Just a test repository
