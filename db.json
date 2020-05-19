@@ -13,7 +13,7 @@
     "name": "typicode"
   }
   "toDOs": {
-   "id": 1, "name": "first", "text": "some text"
+   "id": 1, "name": "first", "text": "some text",
    "id": 2, "name": "second", "text": "some other text"
   }
 }
