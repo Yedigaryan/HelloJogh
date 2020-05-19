@@ -1,2 +1,3 @@
 # HelloJogh
-Just a test repository
+
+Json Database for testing with jsonplaceholder.typicode.com
